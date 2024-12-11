@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <link rel="stylesheet" type="text/css" href="css/index2.css">
+    <title>Job Store</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="css3/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Differents thémes.</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Clair
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Sombre
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    
+
+  <symbol id="chevron-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+  </symbol>
+</svg>
+
+<nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+  <div class="container">
+    <a class="navbar-brand d-md-none" href="#">
+      <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
+     JOb Store
+
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="#offcanvasLabel">Job Store</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav flex-grow-1 justify-content-between">
+          <li class="nav-item"><a class="nav-link" href="#">
+            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
+          </a></li>
+          <img src="images/logo.PNG" height="20px" width="30px">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="entreprise.html">Post Entreprise</a></li>
+          <li class="nav-item"><a class="nav-link" href="personnel.html">Post personnel</a></li>
+          <li class="nav-item"><a class="nav-link" href="aide.html">Aide</a></li>
+          <li class="nav-item"><a class="nav-link" href="s'inscrire.html">S'inscrire</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">
+            <svg class="bi" width="24" height="24"><use xlink:href="#cart"/></svg>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold">job Store</h1>
+      <h3 class="fw-normal text-muted mb-3">Une platforme de recherche d'emploi en ligne</h3>
+      <div class="d-flex gap-3 justify-content-center lead fw-normal">
+        <a class="icon-link" href="s'inscrire.html" title="cliquez ici pour vous inscire">
+          S'inscrire
+          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+        </a>
+        <a class="icon-link" href="entreprise.html" title="cliquez ici pour voir les posts publier par des entreprises">
+          Post entreprise
+          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Post Entreprise</h2>
+        <img src="images/eneo.jpg" height="100px" width="200px">
+        <p class="lead">Post mis en ligne par les entreprises</p>
+      </div>
+      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+       <h2 id="rio"> Le post entreprise est la partie des posts dans laquelle son ranger tout les posts publier par les entreprises. Dans cette partie vous ne retrouverrez pas que seulement des posts publier par des entreprise vous retrouverrez aussi des offres faite par des entreprise, des demandes de personnes qualifié pour n'importe quelle tâche que ce soir un maintenancier, un plombier, un agriculteur ...</h2><br>
+      <a href="entreprise.html" class="btn btn-primary btn-lg" type="button">En savoir plus</a>
+      </div>
+    </div>
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Post Personnel</h2>
+        <img src="images/bj.jpg" height="100px" width="200px">
+        <p class="lead">Ici on retrouve des posts personnel</p>
+      </div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <h2 class="aio">
+          Dans ce post, vous allez retrouver des posts mis en ligne par des personnes qui aimerait documenter leurs apprentissage afin de trouver le travail de leur rêve. Ici les posts sont fait par des personnes ayant déjà acquis des compétences dans un domaine précis, et sont prêt à se faire embocher par qui conque peut avoir besoin de leur aide.
+        </h2><br><br>
+        <a href="personnel.html" class="btn btn-primary btn-lg" type="button">En savoir plus</a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Pourquoi choisir Job Store ?</h2><br>
+        <img src="images/chome.jpg" height="100px" width="200px">
+        <p class="lead">Fini le chômage pour vous</p>
+      </div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <h2 class="aio">
+       Job Store offre de nombreux avantages aux chômeurs. Tout dabord il permet aux individus de consulter une large gamme d'offres d'emploi provenant des divers secteurs et entreprises. Ensuite cette platforme facilite la recherche en proposant des filtres de recherche personalisé en fonction des compétences et de l'expérence des candidats. Enfin, cette platforme permet aux chômeurs de rester informé des opportunités d'emploi en temps réel.
+      </h2>
+          <a href="final.html" class="btn btn-primary btn-lg" type="button">Commencer</a>
+
+      </div>
+    </div>
+    <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Post Client</h2><br>
+        <img src="images/free.png" height="200px" width="160px">
+
+        <p class="lead">Trouvez un travail avec ou sans diplôme</p>
+      </div>
+      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <h2 class="aio">
+          Dans ce post, vous avez la possibilité de Trouver un travail rapide. Il vous suffira de validé vos informations pour recevoir les différents posts par emai. <br>
+          Vous aurez dons des différents job proposé comme par exemple des entreprises qui peuvent rencontrés des problémes et qui auront besoin d'un technicien, une service traiteur qui a besoin du personnel ...
+          <br><br>
+          <a href="client.html" class="btn btn-primary btn-lg" type="button">Commencer</a>
+
+        </h2>
+
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Notre équipe Job Store</h2>
+      </div>
+      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <h2 class="aio"><br><br>
+             Vous pouvez aussi faire partie de Job Store partenaire <br> pour investire sur Job Store, afin de nous aidé <br> à développer et faire évolué cette Platforme. 
+              <br><br>
+          <a href="final.html" class="btn btn-primary btn-lg" type="button">Commencer</a>
+        </h2>
+     
+
+      </div>
+    </div>
+  
+</main>
+
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+      <small class="d-block mb-3 text-body-secondary">&copy; 2024 - L.T.Sangmelima</small>
+       <small class="d-block mb-3 text-body-secondary">&copy; Contacter les Developpeurs</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Soutenir</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#">Video explicative</a></li>
+        <li><a class="link-secondary text-decoration-none" href="youtube.com/@ralphurguefoppa">Youtube</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">LTS</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Obtenir un site web</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Autres</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="aide.html">Aide</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Accueil</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Job Store</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#">Post Entreprise</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Post Personnel</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Lien utile</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#">Facebook</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">Instagram</a></li>
+        <li><a class="link-secondary text-decoration-none" href="youtube.com/@ralphurguefoppa">Youtube</a></li>
+        <li><a class="link-secondary text-decoration-none" href="lytech-sangmelima.com">LT Sangmelima</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
